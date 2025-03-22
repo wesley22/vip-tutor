@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { RefreshCcw } from 'lucide-vue-next'
 
 import Button from '@/components/Button.vue'
@@ -13,6 +13,9 @@ function refreshCaptcha() {
   }
   random.value = result
 }
+onMounted(() => {
+  refreshCaptcha()
+})
 </script>
 <template>
   <div class="flex items-center justify-center h-screen">
