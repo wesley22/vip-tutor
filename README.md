@@ -73,7 +73,7 @@ yarn serve
 
 - The project follows Vue 3 Composition API for better code organization and reusability.
 - Components use `setup()` to define reactive variables and methods.
-- Composables (`useXyz.ts`) are used for reusing logic across components.
+
 
 ### 2. **State Management with Pinia**
 
