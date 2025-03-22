@@ -13,8 +13,8 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo.git
-   cd your-repo
+   git clone https://github.com/wesley22/vip-tutor.git
+   cd vip-tutor
    ```
 2. Install dependencies:
    ```sh
