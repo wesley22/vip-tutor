@@ -1,5 +1,18 @@
 <script setup>
+import { ref } from 'vue'
+import { RefreshCcw } from 'lucide-vue-next'
+
 import Button from '@/components/Button.vue'
+const random = ref('')
+
+function refreshCaptcha() {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  let result = ''
+  for (let i = 0; i < 6; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length))
+  }
+  random.value = result
+}
 </script>
 <template>
   <div class="flex items-center justify-center h-screen">
@@ -33,10 +46,19 @@ import Button from '@/components/Button.vue'
           <div>
             Forgot your password? <span class="text-orange-500 font-bold">Reset Password</span>
           </div>
-          <div>
-            <template>
-              <Checkbox />
-            </template>
+          <div class="flex gap-2 items-center">
+            <div class="relative">
+              <img src="../assets/image/captch_bg.jpeg" alt="" />
+              <div
+                class="absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-bold flex items-center justify-center left-[131px]"
+              >
+                {{ random }}
+              </div>
+            </div>
+
+            <div @click="refreshCaptcha">
+              <RefreshCcw />
+            </div>
           </div>
           <div>
             <label for="first_name" class="block mb-2 text-sm text-gray-900"
