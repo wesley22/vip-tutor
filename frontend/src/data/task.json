@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "task": "Home work",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "task": "Work out",
+    "status": "done"
+  },
+  {
+    "id": 3,
+    "task": "Running",
+    "status": "done"
+  }
+]
