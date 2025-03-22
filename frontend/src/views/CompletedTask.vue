@@ -33,9 +33,6 @@ onMounted(() => {
     <div class="w-[30%]">
       <div class="flex justify-between">
         <div class="text-xl font-bold">Task</div>
-        <div class="bg-green-400 hover:bg-green-300 rounded-lg p-1">
-          <Plus @click="toggleCreateModal" class="text-white" />
-        </div>
       </div>
       <div class="my-4 border-b-2 border-black w-[100%]"></div>
       <!-- task header -->
