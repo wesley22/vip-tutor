@@ -130,8 +130,11 @@ yarn serve
   ├── main.js           # Application entry point
   ```
 
-### 5. **Styling Practices**
+### 5. **Styling Practices with Vuetify**
 
-- Tailwind CSS or SCSS is used for styling (based on project preferences).
-- Utility classes are preferred for quick styling.
-- Scoped styles are used within components to avoid conflicts.
+- Vuetify is used as the primary UI framework.
+- Styling is done using Vuetify’s utility classes and component props.
+   - Examples: class="pa-4", elevation="2", color="primary", etc.
+- Vuetify components are used for layout, typography, and responsiveness (e.g. v-container, v-row, v-col, v-btn).
+- Scoped styles can be applied in components when necessary.
+- Global styles and theme configurations can be customized in the Vuetify plugin setup (usually in plugins/vuetify.js).
